@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 準備中は検索エンジンに載せない。本公開時にこの行を削除する -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>SAKURA KART Tokyo | Street Go-Kart Tour in Tokyo</title>
+  <meta name="description" content="Drive a go-kart through the streets of Tokyo with SAKURA KART. Guided street kart tours for international visitors — book online in minutes.">
+  <meta property="og:title" content="SAKURA KART Tokyo | Street Go-Kart Tour">
+  <meta property="og:description" content="Guided go-kart tours through Tokyo for international visitors.">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:image" content="images/ogp.jpg"> 素材が揃ったら追加 -->
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="top">
+  <div class="header-top">
+    <div class="container header-top__inner">
+      <a href="#top" class="brand" aria-label="SAKURA KART Tokyo">
+        <img src="images/logo-mark.svg" alt="" class="brand__mark" width="40" height="40">
+        <span class="brand__text">
+          <span class="brand__name">SAKURA KART</span>
+          <span class="brand__sub" data-i18n="brand.sub">Tokyo Street Kart Tour</span>
+        </span>
+      </a>
+      <ul class="header-contact">
+        <li><span aria-hidden="true">📞</span> <a href="tel:+81-00-0000-0000">+81-00-0000-0000</a></li>
+        <li><span aria-hidden="true">📧</span> <a href="mailto:info@example.com">info@example.com</a></li>
+        <li data-i18n="header.open">OPEN 9:00–21:00</li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="global-nav" aria-label="Main">
+    <ul class="container global-nav__list">
+      <li><a href="#top" data-i18n="nav.top">Top</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#vehicles" data-i18n="nav.vehicles">Karts</a></li>
+      <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+      <li><a href="#courses" data-i18n="nav.courses">Courses &amp; Prices</a></li>
+      <li><a href="#access" data-i18n="nav.access">Access</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#company" data-i18n="nav.company">Company</a></li>
+      <li class="global-nav__cta"><a href="#booking" data-i18n="nav.book">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media ph ph--hero" role="img" aria-label="Hero photo: karts driving through Tokyo">
+    <span class="ph__label">HERO PHOTO / VIDEO</span>
+  </div>
+  <div class="hero__petals" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="hero__body container">
+    <p class="hero__eyebrow" data-i18n="hero.eyebrow">TOKYO STREET GO-KART TOUR</p>
+    <h1 class="hero__title" id="hero-title" data-i18n="hero.title">Ride Through Tokyo<br>Like Never Before.</h1>
+    <p class="hero__lead" data-i18n="hero.lead">A guided go-kart adventure on real Tokyo streets — made for travelers from around the world.</p>
+    <div class="hero__actions">
+      <a href="#booking" class="btn btn--primary btn--lg" data-i18n="cta.book">Book Your Ride</a>
+      <a href="#courses" class="btn btn--ghost btn--lg" data-i18n="cta.courses">See Courses</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS STRIP ================= -->
+<div class="news-strip">
+  <div class="container news-strip__inner">
+    <span class="news-strip__label" data-i18n="news.label">NEWS</span>
+    <p data-i18n="news.item">🌸 Spring Sakura Course now open — ride under the cherry blossoms (Mar–Apr).</p>
+  </div>
+</div>
+
+<!-- ================= BOOKING ================= -->
+<section class="section" id="booking" aria-labelledby="booking-title">
+  <div class="container">
+    <h2 class="section-title" id="booking-title">
+      <span class="section-title__en">BOOKING</span>
+      <span class="section-title__sub" data-i18n="booking.sub">Reserve your tour</span>
+    </h2>
+
+    <div class="booking-layout">
+      <!-- Tour info card (左カラム) -->
+      <article class="tour-card">
+        <div class="tour-card__media ph" role="img" aria-label="Tour photo"><span class="ph__label">TOUR PHOTO</span></div>
+        <div class="tour-card__body">
+          <h3 class="tour-card__title" data-i18n="tour.title">SAKURA KART Tokyo Tour</h3>
+          <div class="notice">
+            <strong class="notice__label" data-i18n="tour.caution">CAUTION</strong>
+            <p data-i18n="tour.cautionText">A valid driving permit for Japan is required to join the tour. Please check the “Requirements” tab before booking.</p>
+          </div>
+
+          <div class="tabs" data-tabs>
+            <div class="tabs__list" role="tablist">
+              <button role="tab" aria-selected="true"  aria-controls="tab-overview" id="t-overview" data-i18n="tab.overview">Overview</button>
+              <button role="tab" aria-selected="false" aria-controls="tab-req"      id="t-req"      data-i18n="tab.req">Requirements</button>
+              <button role="tab" aria-selected="false" aria-controls="tab-flow"     id="t-flow"     data-i18n="tab.flow">Flow</button>
+              <button role="tab" aria-selected="false" aria-controls="tab-faq"      id="t-faq"      data-i18n="tab.faq">FAQ</button>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" id="tab-overview" aria-labelledby="t-overview">
+              <p data-i18n="tab.overviewText">Our guide leads your group through iconic Tokyo spots — Tokyo Tower, Rainbow Bridge, Shibuya and more. Choose your course, pick a costume, and enjoy the city from the driver’s seat.</p>
+              <dl class="spec">
+                <div><dt data-i18n="spec.duration">Duration</dt><dd data-i18n="spec.durationVal">60 / 90 / 120 min</dd></div>
+                <div><dt data-i18n="spec.group">Group size</dt><dd data-i18n="spec.groupVal">1–8 drivers</dd></div>
+                <div><dt data-i18n="spec.lang">Guide language</dt><dd data-i18n="spec.langVal">English / Japanese</dd></div>
+                <div><dt data-i18n="spec.meet">Meeting point</dt><dd data-i18n="spec.meetVal">SAKURA KART Tokyo shop</dd></div>
+              </dl>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" id="tab-req" aria-labelledby="t-req" hidden>
+              <p data-i18n="req.lead">Bring <strong>one</strong> of the following sets on the day of your tour:</p>
+              <ol class="req-list">
+                <li>
+                  <strong data-i18n="req.a">International Driving Permit (IDP)</strong>
+                  <span data-i18n="req.aNote">1949 Geneva Convention only + your home license + passport</span>
+                </li>
+                <li>
+                  <strong data-i18n="req.b">Home license + official Japanese translation</strong>
+                  <span data-i18n="req.bNote">For eligible countries (e.g. Switzerland, Germany, France, Taiwan) + passport</span>
+                </li>
+                <li>
+                  <strong data-i18n="req.c">Japanese driving license</strong>
+                  <span data-i18n="req.cNote">Standard or medium vehicle license</span>
+                </li>
+                <li>
+                  <strong data-i18n="req.d">US SOFA license</strong>
+                  <span data-i18n="req.dNote">SOFA license + US state license + military ID</span>
+                </li>
+              </ol>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" id="tab-flow" aria-labelledby="t-flow" hidden>
+              <ol class="steps">
+                <li data-i18n="flow.1">Arrive at the shop 30 minutes before your tour time.</li>
+                <li data-i18n="flow.2">Show your booking name, driving permit and passport at reception.</li>
+                <li data-i18n="flow.3">Sign the waiver and pick your favorite costume.</li>
+                <li data-i18n="flow.4">Store your belongings in a locker.</li>
+                <li data-i18n="flow.5">Safety briefing and practice drive with your guide.</li>
+                <li data-i18n="flow.6">Let’s go! Enjoy the tour.</li>
+              </ol>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" id="tab-faq" aria-labelledby="t-faq" hidden>
+              <dl class="faq-mini">
+                <dt data-i18n="faqm.q1">What if it rains?</dt>
+                <dd data-i18n="faqm.a1">Tours run in light rain — raincoats are provided. In severe weather we will contact you to reschedule or refund.</dd>
+                <dt data-i18n="faqm.q2">Can passengers ride with me?</dt>
+                <dd data-i18n="faqm.a2">Karts are single-seat. Every participant needs a valid driving permit.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Booking widget (右カラム) -->
+      <aside class="booking-widget" aria-label="Booking form">
+        <ol class="booking-steps" aria-label="Booking progress">
+          <li class="is-active" data-i18n="bstep.1">Date &amp; Time</li>
+          <li data-i18n="bstep.2">Details</li>
+          <li data-i18n="bstep.3">Confirm</li>
+          <li data-i18n="bstep.4">Payment</li>
+        </ol>
+
+        <form id="booking-form" novalidate>
+          <!-- Step 1 -->
+          <fieldset class="bw-step" data-step="1">
+            <legend class="visually-hidden">Date and time</legend>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.course">Course</span>
+              <select name="course" id="bw-course" required></select>
+            </label>
+
+            <div class="calendar" id="calendar" aria-live="polite"></div>
+
+            <div class="field">
+              <span class="field__label" data-i18n="bw.time">Start time</span>
+              <div class="slots" id="slots"><p class="slots__empty" data-i18n="bw.pickDate">Please select a date.</p></div>
+            </div>
+
+            <label class="field">
+              <span class="field__label" data-i18n="bw.drivers">Number of drivers</span>
+              <select name="drivers" id="bw-drivers"></select>
+            </label>
+
+            <div class="bw-total"><span data-i18n="bw.total">Total</span> <strong id="bw-total">¥0</strong></div>
+            <button type="button" class="btn btn--primary btn--block" data-next data-i18n="bw.next">Next</button>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="bw-step" data-step="2" hidden>
+            <legend class="visually-hidden">Your details</legend>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.name">Full name (as on passport)</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.phone">Phone / WhatsApp</span>
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.country">Country</span>
+              <input type="text" name="country" autocomplete="country-name" required>
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="bw.permit">Driving permit type</span>
+              <select name="permit" required>
+                <option value="" data-i18n="bw.select">Select…</option>
+                <option value="idp" data-i18n="req.a">International Driving Permit (IDP)</option>
+                <option value="translation" data-i18n="req.b">Home license + official Japanese translation</option>
+                <option value="japan" data-i18n="req.c">Japanese driving license</option>
+                <option value="sofa" data-i18n="req.d">US SOFA license</option>
+              </select>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="agree" required>
+              <span data-i18n="bw.agree">I confirm all drivers will bring a valid permit and agree to the terms.</span>
+            </label>
+            <p class="form-error" id="bw-error" role="alert" hidden></p>
+            <div class="bw-nav">
+              <button type="button" class="btn btn--light" data-prev data-i18n="bw.back">Back</button>
+              <button type="button" class="btn btn--primary" data-next data-i18n="bw.next">Next</button>
+            </div>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="bw-step" data-step="3" hidden>
+            <legend class="visually-hidden">Confirm</legend>
+            <dl class="summary" id="bw-summary"></dl>
+            <p class="bw-note" data-i18n="bw.payNote">You will be redirected to our secure payment page to complete your booking.</p>
+            <div class="bw-nav">
+              <button type="button" class="btn btn--light" data-prev data-i18n="bw.back">Back</button>
+              <button type="submit" class="btn btn--primary" data-i18n="bw.pay">Proceed to Payment</button>
+            </div>
+          </fieldset>
+        </form>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section--gray" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <h2 class="section-title" id="about-title">
+      <span class="section-title__en">ABOUT</span>
+      <span class="section-title__sub" data-i18n="about.sub">What is SAKURA KART?</span>
+    </h2>
+
+    <div class="feature-hero">
+      <div class="feature-hero__media ph" role="img" aria-label="About photo"><span class="ph__label">ABOUT PHOTO</span></div>
+      <div class="feature-hero__body">
+        <h3 class="h3" data-i18n="about.h">A Real-Life Street Kart Adventure in Tokyo</h3>
+        <p data-i18n="about.p">SAKURA KART is a guided go-kart tour on public roads, designed for international visitors. Drive past neon streets, landmarks and the bay — and take home memories (and photos) you can’t get anywhere else.</p>
+      </div>
+    </div>
+
+    <h3 class="h3 h3--center" data-i18n="about.whyH">Why You’ll Love It</h3>
+    <ul class="reasons">
+      <li class="reason">
+        <span class="reason__num">01</span>
+        <h4 data-i18n="why.1h">See Tokyo from the street</h4>
+        <p data-i18n="why.1p">Cruise past landmarks at street level — a view tour buses can’t give you.</p>
+      </li>
+      <li class="reason">
+        <span class="reason__num">02</span>
+        <h4 data-i18n="why.2h">Friendly English guides</h4>
+        <p data-i18n="why.2p">Our multilingual guides lead the way and keep everyone safe.</p>
+      </li>
+      <li class="reason">
+        <span class="reason__num">03</span>
+        <h4 data-i18n="why.3h">Costumes &amp; photos</h4>
+        <p data-i18n="why.3p">Pick a free costume and get action photos from your guide.</p>
+      </li>
+      <li class="reason">
+        <span class="reason__num">04</span>
+        <h4 data-i18n="why.4h">Easy online booking</h4>
+        <p data-i18n="why.4p">Choose a time, pay online, and just show up on the day.</p>
+      </li>
+    </ul>
+
+    <h3 class="h3 h3--center" data-i18n="about.optH">Options</h3>
+    <ul class="options">
+      <li class="option-card">
+        <div class="option-card__media ph" role="img" aria-label="Costume photo"><span class="ph__label">COSTUME</span></div>
+        <h4 data-i18n="opt.1h">Costume rental</h4><p class="option-card__price" data-i18n="opt.free">FREE</p>
+      </li>
+      <li class="option-card">
+        <div class="option-card__media ph" role="img" aria-label="Action camera photo"><span class="ph__label">ACTION CAM</span></div>
+        <h4 data-i18n="opt.2h">Action camera video</h4><p class="option-card__price">¥3,000</p>
+      </li>
+      <li class="option-card">
+        <div class="option-card__media ph" role="img" aria-label="Photo package"><span class="ph__label">PHOTO PACK</span></div>
+        <h4 data-i18n="opt.3h">Photo package</h4><p class="option-card__price">¥2,000</p>
+      </li>
+    </ul>
+
+    <div class="flow-box">
+      <h3 class="flow-box__title" data-i18n="about.resH">Reservation Flow</h3>
+      <ol class="flow-row">
+        <li><span>1</span><p data-i18n="res.1">Choose a course &amp; time</p></li>
+        <li><span>2</span><p data-i18n="res.2">Enter your details</p></li>
+        <li><span>3</span><p data-i18n="res.3">Pay online</p></li>
+        <li><span>4</span><p data-i18n="res.4">Receive confirmation email</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VEHICLES ================= -->
+<section class="section" id="vehicles" aria-labelledby="vehicles-title">
+  <div class="container">
+    <h2 class="section-title" id="vehicles-title">
+      <span class="section-title__en">KARTS</span>
+      <span class="section-title__sub" data-i18n="veh.sub">Our vehicles</span>
+    </h2>
+    <ul class="vehicles">
+      <li class="vehicle">
+        <div class="vehicle__media ph" role="img" aria-label="Standard kart"><span class="ph__label">KART 1</span></div>
+        <div class="vehicle__body">
+          <h3 data-i18n="veh.1h">Standard Kart</h3>
+          <p data-i18n="veh.1p">Easy to drive and street-legal. Perfect for first-time drivers.</p>
+        </div>
+      </li>
+      <li class="vehicle">
+        <div class="vehicle__media ph" role="img" aria-label="Sakura edition kart"><span class="ph__label">KART 2</span></div>
+        <div class="vehicle__body">
+          <h3 data-i18n="veh.2h">Sakura Edition</h3>
+          <p data-i18n="veh.2p">Our signature pink kart — the most popular choice for photos.</p>
+        </div>
+      </li>
+      <li class="vehicle">
+        <div class="vehicle__media ph" role="img" aria-label="Premium kart"><span class="ph__label">KART 3</span></div>
+        <div class="vehicle__body">
+          <h3 data-i18n="veh.3h">Premium Kart</h3>
+          <p data-i18n="veh.3p">More comfort and a Bluetooth speaker for your playlist.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= SOCIAL ================= -->
+<section class="section section--pale" id="social" aria-labelledby="social-title">
+  <div class="container">
+    <h2 class="section-title" id="social-title">
+      <span class="section-title__en">SOCIAL</span>
+      <span class="section-title__sub" data-i18n="social.sub">Follow our adventures</span>
+    </h2>
+    <ul class="social-grid">
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+      <li class="ph" role="img" aria-label="Social post"><span class="ph__label">POST</span></li>
+    </ul>
+    <div class="social-links">
+      <a href="#" class="btn btn--light">Instagram</a>
+      <a href="#" class="btn btn--light">TikTok</a>
+      <a href="#" class="btn btn--light">YouTube</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 class="section-title" id="reviews-title">
+      <span class="section-title__en">REVIEWS</span>
+      <span class="section-title__sub" data-i18n="rev.sub">Voices from our guests</span>
+    </h2>
+    <div class="rating-summary">
+      <span class="rating-summary__score">5.0</span>
+      <span class="stars" aria-label="5 out of 5">★★★★★</span>
+      <span class="rating-summary__note" data-i18n="rev.note">Sample reviews — replace with real ones</span>
+    </div>
+    <ul class="reviews">
+      <li class="review">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review__text" data-i18n="rev.1">“The highlight of our Japan trip! Our guide was super friendly and the route was amazing.”</p>
+        <p class="review__by">— Sample Guest, USA</p>
+      </li>
+      <li class="review">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review__text" data-i18n="rev.2">“Driving past Tokyo Tower at night was unreal. Booking was quick and easy.”</p>
+        <p class="review__by">— Sample Guest, Australia</p>
+      </li>
+      <li class="review">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review__text" data-i18n="rev.3">“Great photos, great costumes, great team. Would do it again!”</p>
+        <p class="review__by">— Sample Guest, UK</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= COURSES ================= -->
+<section class="section section--gray" id="courses" aria-labelledby="courses-title">
+  <div class="container">
+    <h2 class="section-title" id="courses-title">
+      <span class="section-title__en">COURSES</span>
+      <span class="section-title__sub" data-i18n="course.sub">Courses &amp; prices</span>
+    </h2>
+    <!-- 料金の正は js/config.js の COURSES。ここは表示用。 -->
+    <div class="courses" id="course-list"></div>
+    <p class="note-sm" data-i18n="course.note">Prices are per driver, tax included. Sample prices — to be updated.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container container--narrow">
+    <h2 class="section-title" id="faq-title">
+      <span class="section-title__en">FAQ</span>
+      <span class="section-title__sub" data-i18n="faq.sub">Frequently asked questions</span>
+    </h2>
+    <div class="faq">
+      <details>
+        <summary data-i18n="faq.q1">What do I need to drive?</summary>
+        <p data-i18n="faq.a1">A valid driving permit for Japan, such as an International Driving Permit (1949 Geneva Convention). See the Requirements tab in the booking section.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">Is there an age limit?</summary>
+        <p data-i18n="faq.a2">Drivers must hold a valid permit for Japan, which in practice means 18 years or older.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">Can I cancel or change my booking?</summary>
+        <p data-i18n="faq.a3">Free changes up to 3 days before your tour. Please see our cancellation policy for details.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">What should I wear?</summary>
+        <p data-i18n="faq.a4">Closed-toe shoes are required. Costumes are free to rent at the shop.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACCESS ================= -->
+<section class="section section--pale" id="access" aria-labelledby="access-title">
+  <div class="container">
+    <h2 class="section-title" id="access-title">
+      <span class="section-title__en">ACCESS</span>
+      <span class="section-title__sub" data-i18n="access.sub">Our shop</span>
+    </h2>
+    <div class="access">
+      <div class="access__map ph" role="img" aria-label="Map"><span class="ph__label">GOOGLE MAP</span></div>
+      <div class="access__info">
+        <h3 class="h4">SAKURA KART Tokyo</h3>
+        <dl class="info-list">
+          <div><dt data-i18n="access.addr">Address</dt><dd data-i18n="access.addrVal">(Address to be decided), Tokyo, Japan</dd></div>
+          <div><dt data-i18n="access.station">Nearest station</dt><dd data-i18n="access.stationVal">(To be decided)</dd></div>
+          <div><dt data-i18n="access.hours">Hours</dt><dd>9:00–21:00</dd></div>
+          <div><dt data-i18n="access.tel">Phone</dt><dd><a href="tel:+81-00-0000-0000">+81-00-0000-0000</a></dd></div>
+        </dl>
+        <a href="#" class="btn btn--light" data-i18n="access.gmap">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPANY ================= -->
+<section class="section" id="company" aria-labelledby="company-title">
+  <div class="container container--narrow">
+    <h2 class="section-title" id="company-title">
+      <span class="section-title__en">COMPANY</span>
+      <span class="section-title__sub" data-i18n="company.sub">Company information</span>
+    </h2>
+    <table class="company-table">
+      <tbody>
+        <tr><th data-i18n="company.name">Company</th><td>(Company name)</td></tr>
+        <tr><th data-i18n="company.rep">Representative</th><td>(Name)</td></tr>
+        <tr><th data-i18n="company.addr">Address</th><td>(Address)</td></tr>
+        <tr><th data-i18n="company.biz">Business</th><td data-i18n="company.bizVal">Go-kart tour operation</td></tr>
+        <tr><th data-i18n="company.contact">Contact</th><td><a href="mailto:info@example.com">info@example.com</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <a href="#top" class="brand brand--footer">
+      <img src="images/logo-mark.svg" alt="" class="brand__mark" width="36" height="36">
+      <span class="brand__name">SAKURA KART</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="#" data-i18n="footer.terms">Terms</a></li>
+      <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+      <li><a href="#" data-i18n="footer.cancel">Cancellation Policy</a></li>
+      <li><a href="#" data-i18n="footer.law">Specified Commercial Transactions Act</a></li>
+    </ul>
+    <p class="copyright">© <span id="year"></span> SAKURA KART</p>
+  </div>
+</footer>
+
+<!-- ================= FLOATING UI ================= -->
+<div class="floating-cta">
+  <button type="button" class="floating-cta__chat" data-open-modal="chat-modal" data-i18n="float.chat">Ask Staff</button>
+  <a href="#booking" class="floating-cta__book" data-i18n="float.book">Book</a>
+</div>
+<a href="#top" class="to-top" aria-label="Back to top">TOP</a>
+
+<div class="modal" id="chat-modal" role="dialog" aria-modal="true" aria-labelledby="chat-title" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__panel">
+    <button type="button" class="modal__close" data-close-modal aria-label="Close">✕</button>
+    <h2 class="modal__title" id="chat-title" data-i18n="chat.title">Ask Our Staff</h2>
+    <p data-i18n="chat.lead">Questions before booking? Contact us on your favorite app.</p>
+    <ul class="contact-list">
+      <li><a href="#" class="contact-btn">WhatsApp</a></li>
+      <li><a href="#" class="contact-btn">LINE</a></li>
+      <li><a href="#" class="contact-btn">Messenger</a></li>
+      <li><a href="mailto:info@example.com" class="contact-btn" data-i18n="chat.email">Email</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

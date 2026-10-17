@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 仮ロゴ：正式ロゴが届いたら差し替え -->
+  <defs>
+    <path id="p" d="M50 50 C36 40 33 18 43 8 L50 15 L57 8 C67 18 64 40 50 50 Z"/>
+  </defs>
+  <g fill="#F4B4C6" stroke="#E58AA5" stroke-width="1.5">
+    <use href="#p"/>
+    <use href="#p" transform="rotate(72 50 50)"/>
+    <use href="#p" transform="rotate(144 50 50)"/>
+    <use href="#p" transform="rotate(216 50 50)"/>
+    <use href="#p" transform="rotate(288 50 50)"/>
+  </g>
+  <circle cx="50" cy="50" r="9" fill="#D9412B"/>
+</svg>
